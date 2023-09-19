@@ -37,7 +37,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please select which license you used',
-        choices: ['MIT', 'ISC', 'GNUPLv3'],
+        choices: ['MIT', 'Apache', 'GPL'],
         filter(val) {
             return val.toLowerCase();
         }
@@ -50,7 +50,7 @@ const questions = [
     {
         type: 'input',
         name: 'gitHub',
-        message: 'Please enter your email'
+        message: 'Please enter your GitHub'
     },
 ];
 
