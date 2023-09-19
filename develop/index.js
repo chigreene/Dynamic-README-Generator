@@ -54,19 +54,19 @@ const questions = [
     },
 ];
 
-async function runQuery(){
-    return inquirer
-    .prompt(questions)
-    .then((data)=>{
-        const markDown = generateMarkdown.generateMarkdown(data)
-        fs.writeFile('README.md', markDown, function(err){
-            if(err){console.log(`Couldn't save file`)}
-            else{console.log(`File save successfully`)}
+function runQuery(){
+    inquirer
+        .prompt(questions)
+        .then((data)=>{
+            const markDown = generateMarkdown(data)
+            fs.writeFile('README.md', markDown, function(err){
+                if(err){console.log(`Couldn't save file`)}
+                else{console.log(`File save successfully`)}
+            })
+            return data
         })
-        return data
-    })
-    .catch((error)=>{
-        console.log(error)
-    })
+        .catch((error)=>{
+            console.log(error)
+        })
 }
 runQuery()

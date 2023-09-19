@@ -1,5 +1,4 @@
-class MarkDown{
-  static renderLicenseBadge(license){
+function renderLicenseBadge(license){
     const badges = {
       mit:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
       apache: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
@@ -9,7 +8,7 @@ class MarkDown{
     return badges[license]
   }
 
-  static renderLicenseLink(license){
+function renderLicenseLink(license){
     const licenseLinks = {
       mit:'[MIT](https://choosealicense.com/licenses/mit/)',
       apache: '[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)',
@@ -19,18 +18,18 @@ class MarkDown{
     return licenseLinks[license]
   }
 // ???
-  static renderLicenseSection(license){
+function renderLicenseSection(license){
     if(license){
-      return `Licensed under the ${this.renderLicenseLink(license)} license`
+      return `Licensed under the ${renderLicenseLink(license)} license`
     } else return ''
   }
   
-  static generateMarkdown(data) {
+function generateMarkdown({title, license, description, installation, usage, contributing, test, email, gitHub}) {
     return `
-# ${data.title}
-${this.renderLicenseBadge(data.license)}
+# ${title}
+${renderLicenseBadge(license)}
 ## Description
-${data.description}
+${description}
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -40,19 +39,18 @@ ${data.description}
 - [Questions](#Questions)
 
 ## Installation
-${data.installation}
+${installation}
 ## Usage
-${data.usage}
+${usage}
 ## License
-${this.renderLicenseSection(data.license)}
+${renderLicenseSection(license)}
 ## Contributing
-${data.contributing}
-## Tests
-${data.tests}
+${contributing}
+## Test
+${test}
 ## Questions
-${data.email}
-${data.gitHub}`
+${email}
+[${gitHub}](https://github.com/${gitHub})`
   }
-}
 
-module.exports = MarkDown;
+module.exports = generateMarkdown;
