@@ -31,12 +31,12 @@ ${renderLicenseBadge(license)}
 ## Description
 ${description}
 ## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Test](#Tests)
-- [Questions](#Questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Test](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${installation}

@@ -4,12 +4,12 @@
 ## Description
 
 ## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Test](#Tests)
-- [Questions](#Questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Test](#tests)
+- [Questions](#questions)
 
 ## Installation
 
@@ -23,4 +23,4 @@ Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license
 
 ## Questions
 
-[chigreene](https://github.com/chigreene)
+[](https://github.com/)
