@@ -59,7 +59,7 @@ function runQuery(){
         .prompt(questions)
         .then((data)=>{
             const markDown = generateMarkdown(data)
-            fs.writeFile('README.md', markDown, function(err){
+            fs.writeFile('../generatedFile/README.md', markDown, function(err){
                 if(err){console.log(`Couldn't save file`)}
                 else{console.log(`File save successfully`)}
             })

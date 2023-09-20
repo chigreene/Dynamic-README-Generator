@@ -49,8 +49,7 @@ ${contributing}
 ## Test
 ${test}
 ## Questions
-${email}
-[${gitHub}](https://github.com/${gitHub})`
+Email: ${email} GitHub: [${gitHub}](https://github.com/${gitHub})`
   }
 
 module.exports = generateMarkdown;
