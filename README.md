@@ -21,7 +21,7 @@ Screenshot of the a user generated README file created using the application.
 5. Answer prompts
 6. File is written to the generateFile folder
 
-Need more help? Please watch this [video](https://drive.google.com/file/d/12SvdwUnUnXnrOLexM6f5GDKvyu4tEVFT/view)
+Need more help? Please watch this [video](https://drive.google.com/file/d/1P_kM3VxTcizAFE5vpyl6WFggFpBfez8U/view)
 
 ## Credits
 
